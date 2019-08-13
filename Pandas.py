@@ -1,7 +1,8 @@
 ###### Add new column ######
 # New column is a substring of an existing column A
 df["new_col"] = df["A"].str[-2:]
-print(df)  
+
+print(df)
 
 ##############################
 ###### Index ######
@@ -24,3 +25,5 @@ pd.merge(left=df1, right=df2, left_on="customer_id", right_on="customer_id")
 ###### Missing Values ######
 # Fill N/A of a column using mean
 print(df['A'].fillna(df['A'].mean()))
+
+#nope
